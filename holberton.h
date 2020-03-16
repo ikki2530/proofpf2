@@ -10,7 +10,6 @@ int convert_string(va_list list);
 typedef struct find
 {
 	char *type;
-	void (*conver)();
 	int (*print)();
 }struct_find
 
