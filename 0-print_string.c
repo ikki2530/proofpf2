@@ -1,13 +1,11 @@
 #include "holberton.h"
 
 
-int print_string(va_list list)
+int print_string(char *s)
 {
 	int i = 0, len = 0;
-	char *p;
 
-	p = va_arg(list, char*);
-	for (i = 0; p[i] != '\0'; i++)
-		len = len + print_char(p[i]);
+	for (i = 0; s[i] != '\0'; i++)
+		len = len + print_char(s[i]);
 	return (len);
 }
