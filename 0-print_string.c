@@ -8,6 +8,6 @@ int print_string(va_list list)
 
 	p = va_arg(list, char*);
 	for (i = 0; p[i] != '\0'; i++)
-		len = len + pchar(p[i]);
+		len = len + print_char(p[i]);
 	return (len);
 }
